@@ -8,7 +8,7 @@
   2. Columnar Databases which store data in columns where each column is stored in a different region in the file system or in a separate file; 
   3. Document-oriented Databases which store data in the form of documents, similar to key-value databases each document has a unique identifier the key and the identifier being the document; 
   4. lastly Graph Databases which similarly to Document Databases store data as document, but with Graph Databases identify relationships between the documents. 
-&ensp; &ensp; One thing that stuck with me is that Databases are not always virtual, but DBMS’s are. 
+&ensp; &ensp; +000D; One thing that stuck with me is that Databases are not always virtual, but DBMS’s are. 
 
 ### **Introduction of Data Lakes**
 
