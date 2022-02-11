@@ -1,6 +1,5 @@
 # **Homework 2**
-#### Niclas Allison
-#### 2/11/2022
+#### Niclas Allison &ensp; &ensp; &ensp; &ensp; 2/11/2022
 
 ### **A comparison of NoSQL Database Management System and Model**
 
