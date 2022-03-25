@@ -11,7 +11,7 @@
 <li> We are going on the assumption that Docker you Docker already installed installed if not you can go to Dockers website and download it, it straight forward on downloading it.</li>
 <li> First open a command line operator and copy and paste this command: git clone https://github.com/big-data-europe/docker-hive.git this command goes to the github repostity and pulls a copy of all the files inside of it</li>
 <li> Once the information is downloaded go into the docker-hive folder then: docker-compose up -d followed by: docker-compose up -d presto-coordinator which both of these commands are used to fully build the docker image that was downloaded. </li>
-<li> </li>
+<li> Finally you can access the Docker image from the command line by doing: docker-compose exec hive-server bash once the image is open you can access Hive by: /opt/hive/bin/beeline -u jdbc:hive2://localhost:10000</li>
 <li> </li>
 <li> </li>
 <li> git clone this reposity https://github.com/big-data-europe/docker-hive you can also </li>
