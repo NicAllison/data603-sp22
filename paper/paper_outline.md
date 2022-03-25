@@ -1,2 +1,2 @@
 ## Hive Pig Paper Outline
-![Alt text](.\Creating_database_and_table.jpg)
+![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Creating_database_and_table.jpg)
