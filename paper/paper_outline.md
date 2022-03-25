@@ -1,12 +1,5 @@
 ## Hive Pig Paper Outline
 
-
-![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Creating_database_and_table.jpg)
-![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Average_Output.jpg)
-![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Max_Output.jpg)
-![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Min_Output.jpg)
-![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Showing_all_age.jpg)
-
 ### 1. Opening Paragraph Explaining what is going to be covered
 <li> This article is going give a brief introduction on Apache Hive and Apache Pig. The document is going to go into detail on how to set up their environments as well as going into the languages that control Pig and Hive. The article will also provide an example on using Hive and Pig which will cover adding information in, displaying the information, as well as finding the average, maximum, and minimum. </li>
 <li> This document is going to cover how to use Apache Hive as well as Apache Pig, explain what Hive and Pig is, as well as instructions on how to set up the environment.</li>
@@ -14,9 +7,13 @@
 ### 2. Paragraph that explains what Hive and HQL is
 
 ### 3. How to set up Hive Environment that I used in Docker
-<li> To set Hive Environment that I used Docker and my command line operator to use the </li>
-<li> I'm going on the assumption that Docker is installed and that you have mild understanding of command line operator. In th</li>
-<li> First open a command line operator as well as a browser </li>
+<li> To set Hive Environment first install we will be using Docker and command line operator to use the install and use Hive </li>
+<li> We are going on the assumption that Docker you Docker already installed installed if not you can go to Dockers website and download it, it straight forward on downloading it.</li>
+<li> First open a command line operator and copy and paste this command: git clone https://github.com/big-data-europe/docker-hive.git this command goes to the github repostity and pulls a copy of all the files inside of it</li>
+<li> Once the information is downloaded go into the docker-hive folder then: docker-compose up -d followed by: docker-compose up -d presto-coordinator which both of these commands are used to fully build the docker image that was downloaded. </li>
+<li> </li>
+<li> </li>
+<li> </li>
 <li> git clone this reposity https://github.com/big-data-europe/docker-hive you can also </li>
 <li> This document has the instructions on how to get the Apache Hive Docker iamge running but I'm also going to go through the commands. </li>
   
