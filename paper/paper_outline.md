@@ -3,8 +3,8 @@
 
 ### Opening Paragraph Explaining what is going to be covered
 <ol>
-  <li> This article is going give a brief introduction on Apache Hive and Apache Pig. The document is going to go into detail on how to set up their environments as well as going into the languages that control Pig and Hive. The article will also provide an example on using Hive and Pig which will cover adding information in, displaying the information, as well as finding the average, maximum, and minimum. 
-  <li> This document is going to cover how to use Apache Hive as well as Apache Pig, explain what Hive and Pig is, as well as instructions on how to set up the environment.
+  <li> This article is going give a brief introduction on Apache Hive and Apache Pig. The document is going to go into detail on how to set up their environments as well as going into the languages that control Pig and Hive. The article will also provide an example on using Hive and Pig which will cover adding information in, displaying the information, as well as finding the average, maximum, and minimum. </li>
+  <li> This document is going to cover how to use Apache Hive as well as Apache Pig, explain what Hive and Pig is, as well as instructions on how to set up the environment. </li>
 </ol>
 ### Paragraph that explains what Hive and HQL is
 <ol>
@@ -12,13 +12,13 @@
 </ol>
 ### How to set up Hive Environment that I used in Docker
 <ol>
-  <li> To set Hive Environment that I used Docker and my command line operator to use the 
-  <li> I'm going on the assumption that Docker is installed and that you have mild understanding of command line operator. In th
-  <li> First open a command line operator as well as a browser 
-  <li> git clone this reposity https://github.com/big-data-europe/docker-hive you can also 
-  <li> This document has the instructions on how to get the Apache Hive Docker iamge running but I'm also going to go through the commands.
-  <li>
-  <li>
+  <li> To set Hive Environment that I used Docker and my command line operator to use the </li>
+  <li> I'm going on the assumption that Docker is installed and that you have mild understanding of command line operator. In th</li>
+  <li> First open a command line operator as well as a browser </li>
+  <li> git clone this reposity https://github.com/big-data-europe/docker-hive you can also </li>
+  <li> This document has the instructions on how to get the Apache Hive Docker iamge running but I'm also going to go through the commands. </li>
+  <li> </li>
+  <li> </li>
 </ol>
 ### How to generate the database, table, average, minimum, maximum, and showing output
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Creating_database_and_table.jpg)
