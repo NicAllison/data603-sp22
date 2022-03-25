@@ -9,9 +9,10 @@
 
 ### 1. Opening Paragraph Explaining what is going to be covered
 <li> This article is going give a brief introduction on Apache Hive and Apache Pig. The document is going to go into detail on how to set up their environments as well as going into the languages that control Pig and Hive. The article will also provide an example on using Hive and Pig which will cover adding information in, displaying the information, as well as finding the average, maximum, and minimum. </li>
-<li> This document is going to cover how to use Apache Hive as well as Apache Pig, explain what Hive and Pig is, as well as instructions on how to set up the environment. </li>
+<li> This document is going to cover how to use Apache Hive as well as Apache Pig, explain what Hive and Pig is, as well as instructions on how to set up the environment.</li>
+
 ### 2. Paragraph that explains what Hive and HQL is
-<li></li>
+
 ### 3. How to set up Hive Environment that I used in Docker
 <li> To set Hive Environment that I used Docker and my command line operator to use the </li>
 <li> I'm going on the assumption that Docker is installed and that you have mild understanding of command line operator. In th</li>
