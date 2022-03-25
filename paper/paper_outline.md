@@ -1,16 +1,16 @@
 ## Hive Pig Paper Outline
 
 
-### Opening Paragraph Explaining what is going to be covered
+### 1. Opening Paragraph Explaining what is going to be covered
 <ol>
   <li> This article is going give a brief introduction on Apache Hive and Apache Pig. The document is going to go into detail on how to set up their environments as well as going into the languages that control Pig and Hive. The article will also provide an example on using Hive and Pig which will cover adding information in, displaying the information, as well as finding the average, maximum, and minimum. </li>
   <li> This document is going to cover how to use Apache Hive as well as Apache Pig, explain what Hive and Pig is, as well as instructions on how to set up the environment. </li>
 </ol>
-### Paragraph that explains what Hive and HQL is
+### 2. Paragraph that explains what Hive and HQL is
 <ol>
   <li>
 </ol>
-### How to set up Hive Environment that I used in Docker
+### 3. How to set up Hive Environment that I used in Docker
 <ol>
   <li> To set Hive Environment that I used Docker and my command line operator to use the </li>
   <li> I'm going on the assumption that Docker is installed and that you have mild understanding of command line operator. In th</li>
@@ -20,16 +20,16 @@
   <li> </li>
   <li> </li>
 </ol>
-### How to generate the database, table, average, minimum, maximum, and showing output
+### 4. How to generate the database, table, average, minimum, maximum, and showing output
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Creating_database_and_table.jpg)
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Average_Output.jpg)
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Max_Output.jpg)
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Min_Output.jpg)
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Showing_all_age.jpg)
-### Paragraph that explains what Pig and Pig Latin are
-### How to set up Pig Environment that I used
-### Code used to create each a table and pieces of data, then find the average, maximum, and minimum from the table as well as display all pieces of data as output
-### Summary of what hive and pig are and how they display the average, max, and min. 
+### 5. Paragraph that explains what Pig and Pig Latin are
+### 6. How to set up Pig Environment that I used
+### 7. Code used to create each a table and pieces of data, then find the average, maximum, and minimum from the table as well as display all pieces of data as output
+### 8. Summary of what hive and pig are and how they display the average, max, and min. 
 
 #### References
 Data Used: https://www.superprof.com/blog/top-20-artists/
