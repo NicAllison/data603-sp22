@@ -9,19 +9,32 @@
 ### 3. How to set up Hive Environment that I used in Docker
 <li> To set Hive Environment first install we will be using Docker and command line operator to use the install and use Hive </li>
 <li> We are going on the assumption that Docker you Docker already installed installed if not you can go to Dockers website and download it, it straight forward on downloading it.</li>
-<li> First open a command line operator and copy and paste this command: git clone https://github.com/big-data-europe/docker-hive.git this command goes to the github repostity and pulls a copy of all the files inside of it</li>
-<li> Once the information is downloaded go into the docker-hive folder then: docker-compose up -d followed by: docker-compose up -d presto-coordinator which both of these commands are used to fully build the docker image that was downloaded. </li>
-<li> Finally you can access the Docker image from the command line by doing: docker-compose exec hive-server bash once the image is open you can access Hive by: /opt/hive/bin/beeline -u jdbc:hive2://localhost:10000</li>
-<li> </li>
-<li> </li>
-<li> git clone this reposity https://github.com/big-data-europe/docker-hive you can also </li>
-<li> This document has the instructions on how to get the Apache Hive Docker iamge running but I'm also going to go through the commands. </li>
+<li> First open a command line operator and copy and paste this command: 
+  git clone https://github.com/big-data-europe/docker-hive.git 
+  this command goes to the github repostity and pulls a copy of all the files inside of it</li>
+<li> Once the information is downloaded go into the docker-hive folder by:
+  cd docker-hive
+  once in the folder use: 
+  docker-compose up -d 
+  follow it up by: 
+  docker-compose up -d presto-coordinator 
+  which both of these commands are used to fully build the docker image that was downloaded. </li>
+<li> Finally you can access the Docker image from the command line by doing:
+  docker-compose exec hive-server bash 
+  once the image is open you can access Hive by: 
+  /opt/hive/bin/beeline -u jdbc:hive2://localhost:10000</li>
+<li> Now you are inside and can begin creating HQL commands. </li>
   
 ### 4. How to generate the database, table, average, minimum, maximum, and showing output
+<li> Now that you should be inside of Hive you can begin writing HQL queries. </li>
+<li> First you will have to create a database and a table to add information to. For this example we are going to create a art database and an artist table which will include the name and age at which the artist died unless they are still living.</li>
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Creating_database_and_table.jpg)
+<li> Next you can get the average of the table for this case by doing</li>
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Average_Output.jpg)
+<li> Similarly as the average you can also produce the Minimum and Maximum.</li>
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Max_Output.jpg)
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Min_Output.jpg)
+<li> You can also print out all the information for be it the database and/or the table</li>
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Showing_all_age.jpg)
 ### 5. Paragraph that explains what Pig and Pig Latin are
 ### 6. How to set up Pig Environment that I used
