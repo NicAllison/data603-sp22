@@ -26,15 +26,15 @@
 <li> Now you are inside and can begin creating HQL commands. </li>
   
 ### 4. How to generate the database, table, average, minimum, maximum, and showing output
-<li> Now that you should be inside of Hive you can begin writing HQL queries. </li>
-<li> First you will have to create a database and a table to add information to. For this example we are going to create a art database and an artist table which will include the name and age at which the artist died unless they are still living.</li>
+Now that you should be inside of Hive you can begin writing HQL queries.
+First you will have to create a database and a table to add information to. For this example we are going to create a art database and an artist table which will include the name and age at which the artist died unless they are still living.
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Creating_database_and_table.jpg)
-<li> Next you can get the average of the table for this case by doing</li>
+Next you can get the average of the table for this case by doing
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Average_Output.jpg)
-<li> Similarly as the average you can also produce the Minimum and Maximum.</li>
+Similarly as the average you can also produce the Minimum and Maximum.
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Max_Output.jpg)
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Min_Output.jpg)
-<li> You can also print out all the information for be it the database and/or the table</li>
+You can also print out all the information for be it the database and/or the table
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Showing_all_age.jpg)
 ### 5. Paragraph that explains what Pig and Pig Latin are
 ### 6. How to set up Pig Environment that I used
