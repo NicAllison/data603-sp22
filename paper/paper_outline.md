@@ -28,15 +28,26 @@
   
 ### 4. How to generate the database, table, average, minimum, maximum, and showing output
 Now that you should be inside of Hive you can begin writing HQL queries.
-First you will have to create a database and a table to add information to. For this example we are going to create a art database and an artist table which will include the name and age at which the artist died unless they are still living.
-![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Creating_database_and_table.jpg)
+First you will have to create a database and a table to add information to. For this example we are going to create a art database and an artist table which will include the name and age at which the artist died unless they are still living. 
+1. CREATE DATABASE art;
+2. use art;
+3. create table artist (name string, age int);
+4. show tables; 
+5. show databases; 
+6. INSERT INTO TABLE artist VALUES ('Edgar Degas', 83), ('Leonardo da Vinci', 67), ()</li>
 Next you can get the average of the table for this case by doing
-![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Average_Output.jpg)
+7. select AVG(age) from artist; 
 Similarly as the average you can also produce the Minimum and Maximum.
+8. select MAX(age) from artist; 
+9. select MIN(age) from artist; 
+You can also print out all the information for be it the database and/or the table
+
+![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Creating_database_and_table.jpg)
+![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Average_Output.jpg)
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Max_Output.jpg)
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Min_Output.jpg)
-You can also print out all the information for be it the database and/or the table
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Showing_all_age.jpg)
+
 ### 5. Paragraph that explains what Pig and Pig Latin are
 <li> Apache Pig is similar to Spark and Hive where they sit on top of MapReduce. Pig is a tool that can analyze large sets of data and then able to represent the data as a data flow. When using Apache Pig it as a procedural language, Pig Latin which allows you to make perform MapReduce commands without having to use the clunky ness of Java. </li>
 
