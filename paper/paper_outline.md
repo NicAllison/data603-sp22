@@ -5,6 +5,7 @@
 <li> This document is going to cover how to use Apache Hive as well as Apache Pig, explain what Hive and Pig is, as well as instructions on how to set up the environment.</li>
 
 ### 2. Paragraph that explains what Hive and HQL is
+<li> Apache Hive is similar to MapReduce where it is tool that sits on top of Hadoop. For Hive it is a data warehouse that, “summarizes Big Data and makes querying and analyzing easy”(TutorialPoint 1). Using Hive to query data in Hadoop you can use the HiveQL, Hive Query Language, which act similar to SQL, but is not a relational database. </li>
 
 ### 3. How to set up Hive Environment that I used in Docker
 <li> To set Hive Environment first install we will be using Docker and command line operator to use the install and use Hive </li>
@@ -37,8 +38,23 @@ Similarly as the average you can also produce the Minimum and Maximum.
 You can also print out all the information for be it the database and/or the table
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Showing_all_age.jpg)
 ### 5. Paragraph that explains what Pig and Pig Latin are
+<li> Apache Pig is similar to Spark and Hive where they sit on top of MapReduce. Pig is a tool that can analyze large sets of data and then able to represent the data as a data flow. When using Apache Pig it as a procedural language, Pig Latin which allows you to make perform MapReduce commands without having to use the clunky ness of Java. </li>
+
 ### 6. How to set up Pig Environment that I used
+<li> Issues setting up Pig Environment.</li>
+
 ### 7. Code used to create each a table and pieces of data, then find the average, maximum, and minimum from the table as well as display all pieces of data as output
+<li> First create a CSV/text file which will contain the names and age of the artists </li>
+<li> Artist=LOAD ‘artists’ USING PigStorage() AS (name:chararray, age:isnt) </li>
+<li> Aver_Age= foreach Artist Generate (Artist.name, AVG(Artist.age)) </li>
+<li> Min_Age= foreach Artist Generate (Artist.name, MIN(Artist.age)) </li>
+<li> Max_Age= foreach Artist Generate (Artist.name, MAX(Artist.age)) </li>
+<li> B=A </li>
+<li> Dump Min_Age </li>
+<li> Dump Max_Age </li>
+<li> Dump Aver_Age </li>
+<li> Dump B </li>
+
 ### 8. Summary of what hive and pig are and how they display the average, max, and min. 
 
 #### References
@@ -50,4 +66,6 @@ https://phoenixnap.com/kb/hive-create-table
 https://datafibers-community.github.io/blog/2018/02/02/2018-02-02-hive-get-max-min-value-rows/
 https://www.projectpro.io/questions/5760/hive-query-for-avg-of-marks
 https://www.tutorialspoint.com/hive/index.htm
+https://pig.apache.org/docs/latest/basic.html
+https://www.tutorialspoint.com/apache_pig/apache_pig_avg.htm
 
