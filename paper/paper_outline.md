@@ -27,21 +27,20 @@
 <li> Now you are inside and can begin creating HQL commands. </li>
   
 ### 4. How to generate the database, table, average, minimum, maximum, and showing output
-Now that you should be inside of Hive you can begin writing HQL queries.
+1. Now that you should be inside of Hive you can begin writing HQL queries.
 First you will have to create a database and a table to add information to. For this example we are going to create a art database and an artist table which will include the name and age at which the artist died unless they are still living. 
 1. CREATE DATABASE art;
 2. use art;
 3. create table artist (name string, age int);
-4. show tables; 
-5. show databases; 
-6. INSERT INTO TABLE artist VALUES ('Edgar Degas', 83), ('Leonardo da Vinci', 67), ()</li>
-Next you can get the average of the table for this case by doing
-7. select AVG(age) from artist; 
-Similarly as the average you can also produce the Minimum and Maximum.
-8. select MAX(age) from artist; 
-9. select MIN(age) from artist; 
-You can also print out all the information for be it the database and/or the table
-
+4. INSERT INTO TABLE artist VALUES ('Edgar Degas', 83), ('Leonardo da Vinci', 67);
+2. Next you can get the average of the table for this case by doing
+1. select AVG(age) from artist; 
+3. Similarly as the average you can also produce the Minimum and Maximum.
+1. select MAX(age) from artist; 
+2. select MIN(age) from artist; 
+4. You can also print out all the information for be it the database and/or the table
+1. show tables; 
+2. show databases; 
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Creating_database_and_table.jpg)
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Average_Output.jpg)
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Hive_Max_Output.jpg)
