@@ -27,18 +27,18 @@
 <li> Now you are inside and can begin creating HQL commands. </li>
   
 ### 4. How to generate the database, table, average, minimum, maximum, and showing output
-1. Now that you should be inside of Hive you can begin writing HQL queries.
+###### 1. Now that you should be inside of Hive you can begin writing HQL queries.
 First you will have to create a database and a table to add information to. For this example we are going to create a art database and an artist table which will include the name and age at which the artist died unless they are still living. 
 1. CREATE DATABASE art;
 2. use art;
 3. create table artist (name string, age int);
 4. INSERT INTO TABLE artist VALUES ('Edgar Degas', 83), ('Leonardo da Vinci', 67);
-2. Next you can get the average of the table for this case by doing
+###### 2. Next you can get the average of the table for this case by doing
 1. select AVG(age) from artist; 
-3. Similarly as the average you can also produce the Minimum and Maximum.
+###### 3. Similarly as the average you can also produce the Minimum and Maximum.
 1. select MAX(age) from artist; 
 2. select MIN(age) from artist; 
-4. You can also print out all the information for be it the database and/or the table
+###### 4. You can also print out all the information for be it the database and/or the table
 1. show tables; 
 2. show databases; 
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Outline/paper/Creating_database_and_table.jpg)
@@ -68,14 +68,14 @@ First you will have to create a database and a table to add information to. For 
 ### 8. Summary of what hive and pig are and how they display the average, max, and min. 
 
 #### References
-Data Used: https://www.superprof.com/blog/top-20-artists/
-Hive Docker: https://hub.docker.com/r/bde2020/hive/
-Hive Docker Instructions: https://github.com/big-data-europe/docker-hive
-Hive Help:https://docs.cloudera.com/HDPDocuments/HDP2/HDP-2.6.0/bk_data-access/content/new-feature-insert-values-update-delete.html
-https://phoenixnap.com/kb/hive-create-table
-https://datafibers-community.github.io/blog/2018/02/02/2018-02-02-hive-get-max-min-value-rows/
-https://www.projectpro.io/questions/5760/hive-query-for-avg-of-marks
-https://www.tutorialspoint.com/hive/index.htm
-https://pig.apache.org/docs/latest/basic.html
-https://www.tutorialspoint.com/apache_pig/apache_pig_avg.htm
+1. Data Used: https://www.superprof.com/blog/top-20-artists/
+2. Hive Docker: https://hub.docker.com/r/bde2020/hive/
+3. Hive Docker Instructions: https://github.com/big-data-europe/docker-hive
+4. Hive Help:https://docs.cloudera.com/HDPDocuments/HDP2/HDP-2.6.0/bk_data-access/content/new-feature-insert-values-update-delete.html
+5. https://phoenixnap.com/kb/hive-create-table
+6. https://datafibers-community.github.io/blog/2018/02/02/2018-02-02-hive-get-max-min-value-rows/
+7. https://www.projectpro.io/questions/5760/hive-query-for-avg-of-marks
+8. https://www.tutorialspoint.com/hive/index.htm
+9. https://pig.apache.org/docs/latest/basic.html
+10. https://www.tutorialspoint.com/apache_pig/apache_pig_avg.htm
 
