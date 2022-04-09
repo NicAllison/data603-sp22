@@ -33,7 +33,7 @@ for _ in range(5):
     """)    
     time.sleep(5)
     
-streamer.awaitTermination(timeout=120)
+streamer.awaitTermination(timeout=60*60)
 print('streaming done!')
 
 lat=[]
