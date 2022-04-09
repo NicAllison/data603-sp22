@@ -29,7 +29,7 @@ for _ in range(5):
     df = spark.sql("""
     SELECT CAST(get_json_object(payload, '$.iss_position.latitude') AS FLOAT) AS latitude,
            CAST(get_json_object(payload, '$.iss_position.longitude') AS FLOAT) AS longitude
-    FROM askReddit
+    FROM Reddit
     """)    
     time.sleep(5)
     
