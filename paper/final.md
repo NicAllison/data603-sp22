@@ -1,4 +1,4 @@
-## Hive Pig Paper Outline
+## Hive Pig Paper
 
 ### 1. Opening Paragraph Explaining what is going to be covered
 <li> This article is going give a brief introduction on Apache Hive and Apache Pig. The document is going to go into detail on how to set up their environments as well as going into the languages that control Pig and Hive. The article will also provide an example on using Hive and Pig which will cover adding information in, displaying the information, as well as finding the average, maximum, and minimum. </li>
@@ -10,21 +10,33 @@
 ### 3. How to set up Hive Environment that I used in Docker
 <li> To set Hive Environment first install we will be using Docker and command line operator to use the install and use Hive </li>
 <li> We are going on the assumption that Docker you Docker already installed installed if not you can go to Dockers website and download it, it straight forward on downloading it.</li>
-<li> First open a command line operator and copy and paste this command: 
-  git clone https://github.com/big-data-europe/docker-hive.git 
-  this command goes to the github repostity and pulls a copy of all the files inside of it</li>
-<li> Once the information is downloaded go into the docker-hive folder by:
+######First open a command line operator and copy and paste this command:
+```
+  git clone https://github.com/big-data-europe/docker-hive.git
+```
+###### this command goes to the github repostity and pulls a copy of all the files inside of it</li>
+###### Once the information is downloaded go into the docker-hive folder by:
+```
   cd docker-hive
-  once in the folder use: 
+```
+###### once in the folder use: 
+```
   docker-compose up -d 
-  follow it up by: 
+```
+###### follow it up by: 
+```
   docker-compose up -d presto-coordinator 
-  which both of these commands are used to fully build the docker image that was downloaded. </li>
-<li> Finally you can access the Docker image from the command line by doing:
-  docker-compose exec hive-server bash 
-  once the image is open you can access Hive by: 
-  /opt/hive/bin/beeline -u jdbc:hive2://localhost:10000</li>
-<li> Now you are inside and can begin creating HQL commands. </li>
+```
+###### which both of these commands are used to fully build the docker image that was downloaded. </li>
+###### Finally you can access the Docker image from the command line by doing:
+```
+  docker-compose exec hive-server bash
+```
+###### once the image is open you can access Hive by: 
+```
+  /opt/hive/bin/beeline -u jdbc:hive2://localhost:10000
+```
+###### Now you are inside and can begin creating HQL commands. </li>
   
 ### 4. How to generate the database, table, average, minimum, maximum, and showing output
 ###### 1. Now that you should be inside of Hive you can begin writing HQL queries.
