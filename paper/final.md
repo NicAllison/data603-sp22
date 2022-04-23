@@ -10,7 +10,7 @@
 ### 3. How to set up Hive Environment that I used in Docker
 <li> To set Hive Environment first install we will be using Docker and command line operator to use the install and use Hive </li>
 <li> We are going on the assumption that Docker you Docker already installed installed if not you can go to Dockers website and download it, it straight forward on downloading it.</li>
-######First open a command line operator and copy and paste this command:
+###### First open a command line operator and copy and paste this command:
 ```
   git clone https://github.com/big-data-europe/docker-hive.git
 ```
