@@ -14,7 +14,7 @@
 ```
   git clone https://github.com/big-data-europe/docker-hive.git
 ```
-###### this command goes to the github repostity and pulls a copy of all the files inside of it</li>
+###### this command goes to the github repostity and pulls a copy of all the files inside of it
 ###### Once the information is downloaded go into the docker-hive folder by:
 ```
   cd docker-hive
