@@ -8,61 +8,59 @@
 <li> Apache Hive is similar to MapReduce where it is tool that sits on top of Hadoop. For Hive it is a data warehouse that, “summarizes Big Data and makes querying and analyzing easy”(TutorialPoint 1). Using Hive to query data in Hadoop you can use the HiveQL, Hive Query Language, which act similar to SQL, but is not a relational database. </li>
 
 ### 3. How to set up Hive Environment that I used in Docker
-###### To set Hive Environment first install we will be using Docker and command line operator to use the install and use Hive. We are going on the assumption that Docker you Docker already installed installed if not you can go to Dockers website and download it, it straight forward on downloading it. First open a command line operator and copy and paste this command:
+To set Hive Environment first install we will be using Docker and command line operator to use the install and use Hive. We are going on the assumption that Docker you Docker already installed installed if not you can go to Dockers website and download it, it straight forward on downloading it. First open a command line operator and copy and paste this command:
 ```
   git clone https://github.com/big-data-europe/docker-hive.git
 ```
-###### this command goes to the github repostity and pulls a copy of all the files inside of it
-###### Once the information is downloaded go into the docker-hive folder by:
+this command goes to the github repostity and pulls a copy of all the files inside of it. Once the information is downloaded go into the docker-hive folder by:
 ```
   cd docker-hive
 ```
-###### once in the folder use: 
+once in the folder use: 
 ```
   docker-compose up -d 
 ```
-###### follow it up by: 
+follow it up by: 
 ```
   docker-compose up -d presto-coordinator 
 ```
-###### which both of these commands are used to fully build the docker image that was downloaded. </li>
-###### Finally you can access the Docker image from the command line by doing:
+which both of these commands are used to fully build the docker image that was downloaded. Finally you can access the Docker image from the command line by doing
 ```
   docker-compose exec hive-server bash
 ```
-###### once the image is open you can access Hive by: 
+once the image is open you can access Hive by: 
 ```
   /opt/hive/bin/beeline -u jdbc:hive2://localhost:10000
 ```
-###### Now you are inside and can begin creating HQL commands. </li>
+Now you are inside and can begin creating HQL commands. </li>
   
 ### 4. How to generate the database, table, average, minimum, maximum, and showing output
-###### 1. Now that you should be inside of Hive you can begin writing HQL queries.
-First you will have to create a database and a table to add information to. For this example we are going to create a art database and an artist table which will include the name and age at which the artist died unless they are still living. 
+Now that you should be inside of Hive you can begin writing HQL queries. First you will have to create a database and a table to add information to. For this example we are going to create a art database and an artist table which will include the name and age at which the artist died unless they are still living. 
 ```
 CREATE DATABASE art;
 use art;
 create table artist (name string, age int);
 INSERT INTO TABLE artist VALUES ('Edgar Degas', 83), ('Leonardo da Vinci', 67);
 ```
-###### Next you can get the average of the table for this case by doing
+Next you can get the average of the table for this case by doing
 ```
 select AVG(age) from artist; 
 ```
-###### Similarly as the average you can also produce the Minimum and Maximum.
+Similarly as the average you can also produce the Minimum and Maximum.
 ```
 select MAX(age) from artist; 
 select MIN(age) from artist;
 ```
-###### You can also print out all the information for be it the database and/or the table
+You can also print out all the information for be it the database and/or the table
 ```
 show tables;
 show databases;
 ```
 ### 5. Paragraph that explains what Pig and Pig Latin are
-<li> Apache Pig is similar to Spark and Hive where they sit on top of MapReduce. Pig is a tool that can analyze large sets of data and then able to represent the data as a data flow. When using Apache Pig it as a procedural language, Pig Latin which allows you to make perform MapReduce commands without having to use the clunky ness of Java. </li>
+Apache Pig is similar to Spark and Hive where they sit on top of MapReduce. Pig is a tool that can analyze large sets of data and then able to represent the data as a data flow. When using Apache Pig it as a procedural language, Pig Latin which allows you to make perform MapReduce commands without having to use the clunky ness of Java.
 
 ### 6. How to set up Pig Environment that I used
+
 ```
 docker pull hakanserce/apache-pig
 docker run --name pig-demo -it hakanserce/apache-pig /etc/bootstrap.sh -bash
