@@ -1,8 +1,8 @@
-## Hive Pig Paper
+## Beginning Guide for Hive and Pig
 
 ### 1. Opening Paragraph Explaining what is going to be covered
-<li> This article is going give a brief introduction on Apache Hive and Apache Pig. The document is going to go into detail on how to set up their environments as well as going into the languages that control Pig and Hive. The article will also provide an example on using Hive and Pig which will cover adding information in, displaying the information, as well as finding the average, maximum, and minimum. </li>
-<li> This document is going to cover how to use Apache Hive as well as Apache Pig, explain what Hive and Pig is, as well as instructions on how to set up the environment.</li>
+<li> This article is going give a brief introduction on Apache Hive and Apache Pig. The document is going to go into detail on how to set up their environments as well as going into the languages that control Pig and Hive. The article will also provide an example on using Hive and Pig which will cover adding data, display the data, as well as finding the average, maximum, and minimum. </li>
+
 
 ### 2. Paragraph that explains what Hive and HQL is
 <li> Apache Hive is similar to MapReduce where it is tool that sits on top of Hadoop. For Hive it is a data warehouse that, “summarizes Big Data and makes querying and analyzing easy”(TutorialPoint 1). Using Hive to query data in Hadoop you can use the HiveQL, Hive Query Language, which act similar to SQL, but is not a relational database. </li>
@@ -63,7 +63,13 @@ show databases;
 <li> Apache Pig is similar to Spark and Hive where they sit on top of MapReduce. Pig is a tool that can analyze large sets of data and then able to represent the data as a data flow. When using Apache Pig it as a procedural language, Pig Latin which allows you to make perform MapReduce commands without having to use the clunky ness of Java. </li>
 
 ### 6. How to set up Pig Environment that I used
-<li> Issues setting up Pig Environment.</li>
+```
+docker pull hakanserce/apache-pig
+docker run --name pig-demo -it hakanserce/apache-pig /etc/bootstrap.sh -bash
+mkdir /data
+docker cp artist_age.csv pig-demo:/data/
+pig -x local
+```
 
 ### 7. Code used to create each a table and pieces of data, then find the average, maximum, and minimum from the table as well as display all pieces of data as output
 ###### First create a CSV/text file which will contain the names and age of the artists.
