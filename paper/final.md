@@ -57,15 +57,17 @@ show databases;
 
 ### 7. Code used to create each a table and pieces of data, then find the average, maximum, and minimum from the table as well as display all pieces of data as output
 <li> First create a CSV/text file which will contain the names and age of the artists </li>
-<li> artist = LOAD ‘artist_age.csv’ USING PigStorage(',') AS (name:chararray, age:isnt); </li>
-<li> artist_gp_all = Group artist All; </li>
-<li> avr_age = foreach artist_gp_all generate AVG(artist.age); </li>
-<li> min_age = foreach artist_gp_all generate MIN(artist.age); </li>
-<li> max_age = foreach artist_gp_all generate MAX(artist.age); </li>
-<li> Dump min_age; </li>
-<li> Dump max_age; </li>
-<li> Dump avr_age; </li>
-<li> Dump artist; </li>
+```
+artist = LOAD ‘artist_age.csv’ USING PigStorage(',') AS (name:chararray, age:isnt);
+artist_gp_all = Group artist All;
+avr_age = foreach artist_gp_all generate AVG(artist.age);
+min_age = foreach artist_gp_all generate MIN(artist.age);
+max_age = foreach artist_gp_all generate MAX(artist.age);
+Dump min_age;
+Dump max_age;
+Dump avr_age;
+Dump artist;
+```
 
 ### 8. Summary of what hive and pig are and how they display the average, max, and min. 
 
