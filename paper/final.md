@@ -35,16 +35,16 @@ use art;
 create table artist (name string, age int);
 INSERT INTO TABLE artist VALUES ('Edgar Degas', 83), ('Leonardo da Vinci', 67);
 ```
-###### 2. Next you can get the average of the table for this case by doing
+###### Next you can get the average of the table for this case by doing
 ```
 select AVG(age) from artist; 
 ```
-###### 3. Similarly as the average you can also produce the Minimum and Maximum.
+###### Similarly as the average you can also produce the Minimum and Maximum.
 ```
 select MAX(age) from artist; 
 select MIN(age) from artist;
 ```
-###### 4. You can also print out all the information for be it the database and/or the table
+###### You can also print out all the information for be it the database and/or the table
 ```
 show tables;
 show databases;
@@ -56,7 +56,7 @@ show databases;
 <li> Issues setting up Pig Environment.</li>
 
 ### 7. Code used to create each a table and pieces of data, then find the average, maximum, and minimum from the table as well as display all pieces of data as output
-<li> First create a CSV/text file which will contain the names and age of the artists </li>
+###### First create a CSV/text file which will contain the names and age of the artists.
 ```
 artist = LOAD ‘artist_age.csv’ USING PigStorage(',') AS (name:chararray, age:isnt);
 artist_gp_all = Group artist All;
