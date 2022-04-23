@@ -29,15 +29,21 @@
 ### 4. How to generate the database, table, average, minimum, maximum, and showing output
 ###### 1. Now that you should be inside of Hive you can begin writing HQL queries.
 First you will have to create a database and a table to add information to. For this example we are going to create a art database and an artist table which will include the name and age at which the artist died unless they are still living. 
-1. CREATE DATABASE art;
-2. use art;
-3. create table artist (name string, age int);
-4. INSERT INTO TABLE artist VALUES ('Edgar Degas', 83), ('Leonardo da Vinci', 67);
+```
+CREATE DATABASE art;
+use art;
+create table artist (name string, age int);
+INSERT INTO TABLE artist VALUES ('Edgar Degas', 83), ('Leonardo da Vinci', 67);
+```
 ###### 2. Next you can get the average of the table for this case by doing
-1. select AVG(age) from artist; 
+```
+select AVG(age) from artist; 
+```
 ###### 3. Similarly as the average you can also produce the Minimum and Maximum.
-1. select MAX(age) from artist; 
-2. select MIN(age) from artist; 
+```
+select MAX(age) from artist; 
+select MIN(age) from artist;
+```
 ###### 4. You can also print out all the information for be it the database and/or the table
 ```
 show tables;
