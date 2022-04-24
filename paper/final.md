@@ -1,14 +1,14 @@
 ## Beginning Guide for Hive and Pig
 
 ### 1. Opening Paragraph Explaining what is going to be covered
-> This article is going give a brief introduction on Apache Hive and Apache Pig. The document is going to go into detail on how to set up their environments as well as going into the languages that control Pig and Hive. The article will also provide an example on using Hive and Pig which will cover adding data, display the data, as well as finding the average, maximum, and minimum.
+&ensp; &ensp; This article is going give a brief introduction on Apache Hive and Apache Pig. The document is going to go into detail on how to set up their environments as well as going into the languages that control Pig and Hive. The article will also provide an example on using Hive and Pig which will cover adding data, display the data, as well as finding the average, maximum, and minimum.
 
 
 ### 2. Paragraph that explains what Hive and HQL is
 &ensp; &ensp; Apache Hive is similar to MapReduce where it is tool that sits on top of Hadoop. For Hive it is a data warehouse that, “summarizes Big Data and makes querying and analyzing easy”(TutorialPoint 1). Using Hive to query data in Hadoop you can use the HiveQL, Hive Query Language, which act similar to SQL, but is not a relational database. 
 
 ### 3. How to set up Hive Environment that I used in Docker
-To set Hive Environment first install we will be using Docker and command line operator to use the install and use Hive. We are going on the assumption that Docker you Docker already installed installed if not you can go to Dockers website and download it, it straight forward on downloading it. First open a command line operator and copy and paste this command:
+&ensp; &ensp; To set Hive Environment first install we will be using Docker and command line operator to use the install and use Hive. We are going on the assumption that Docker you Docker already installed installed if not you can go to Dockers website and download it, it straight forward on downloading it. First open a command line operator and copy and paste this command:
 ```
   git clone https://github.com/big-data-europe/docker-hive.git
 ```
@@ -35,7 +35,7 @@ once the image is open you can access Hive by:
 Now you are inside and can begin creating HQL commands. </li>
   
 ### 4. How to generate the database, table, average, minimum, maximum, and showing output
-Now that you should be inside of Hive you can begin writing HQL queries. First you will have to create a database and a table to add information to. For this example we are going to create a art database and an artist table which will include the name and age at which the artist died unless they are still living. 
+&ensp; &ensp; Now that you should be inside of Hive you can begin writing HQL queries. First you will have to create a database and a table to add information to. For this example we are going to create a art database and an artist table which will include the name and age at which the artist died unless they are still living. 
 ```
 CREATE DATABASE art;
 use art;
@@ -57,11 +57,11 @@ show tables;
 show databases;
 ```
 ### 5. Paragraph that explains what Pig and Pig Latin are
-Apache Pig is similar to Spark and Hive where they sit on top of MapReduce. Pig is a tool that can analyze large sets of data and then able to represent the data as a data flow. When using Apache Pig it as a procedural language, Pig Latin which allows you to make perform MapReduce commands without having to use the clunky ness of Java.
+&ensp; &ensp; Apache Pig is similar to Spark and Hive where they sit on top of MapReduce. Pig is a tool that can analyze large sets of data and then able to represent the data as a data flow. When using Apache Pig it as a procedural language, Pig Latin which allows you to make perform MapReduce commands without having to use the clunky ness of Java.
 
 ### 6. How to set up Pig Environment that I used
 
-Setting up the Environment for Apache Pig is a little daunting if you are not using a Mac. With a Mac all you will need to do is a follow the preceding steps below, if not the Docker image that is used does not work on a Windows machine, and there is no information if it will work on a Linux machine. If you happen to be using a Windows or Linux machine this guide does not show the environment set up but you can go to Apache Pig’s website or TutorialPoint they have instructions on how to install what is needed to run Apache Pig. The set up for Apache Pig with a Mac is simple, as long as you followed the Hive instructions on installing Docker than pulling and using the Docker Image it is easy to use. First open up a command terminal and start off by pulling the Docker image. 
+&ensp; &ensp; Setting up the Environment for Apache Pig is a little daunting if you are not using a Mac. With a Mac all you will need to do is a follow the preceding steps below, if not the Docker image that is used does not work on a Windows machine, and there is no information if it will work on a Linux machine. If you happen to be using a Windows or Linux machine this guide does not show the environment set up but you can go to Apache Pig’s website or TutorialPoint they have instructions on how to install what is needed to run Apache Pig. The set up for Apache Pig with a Mac is simple, as long as you followed the Hive instructions on installing Docker than pulling and using the Docker Image it is easy to use. First open up a command terminal and start off by pulling the Docker image. 
 ```
 docker pull hakanserce/apache-pig
 ```
@@ -89,7 +89,7 @@ the second option is the easiest because you will be able to use the normal csv 
 
 ### 7. Code used to create each a table and pieces of data, then find the average, maximum, and minimum from the table as well as display all pieces of data as output
 
-Now that the Apache-Pig Environment is set up and you should have the container and Pig running as well as having the csv file imported you can begin running commands. First you will need to import the csv file which requires the need of the Load command.
+&ensp; &ensp; Now that the Apache-Pig Environment is set up and you should have the container and Pig running as well as having the csv file imported you can begin running commands. First you will need to import the csv file which requires the need of the Load command.
 ```
 artist = LOAD ‘artist_age.csv’ USING PigStorage(',') AS (name:chararray, age:isnt);
 ```
@@ -113,7 +113,7 @@ Dump artist;
 You should have noticed even though you put in the command there was no output that is because you will need to use the DUMP command which requires the keyword dump follows by the value that you want to view it is similar to a print function in Python. Now you are able to add data into Pig, add relationships to the data, print the data, and find the Maximum, Minimum, and Average values all in Apache Pig.
 
 ### 8. Summary of what hive and pig are and how they display the average, max, and min. 
-During this beginners guide you should have gained some insight into what Apache Hive and Apache Pig are. While also learning how to set up the Docker image to run there environments. Finally you should have also learned about using the language to be able to find the Maximum, Minimum, and Average ages of the Artists from the data that was given in the beginning.
+&ensp; &ensp; During this beginners guide you should have gained some insight into what Apache Hive and Apache Pig are. While also learning how to set up the Docker image to run there environments. Finally you should have also learned about using the language to be able to find the Maximum, Minimum, and Average ages of the Artists from the data that was given in the beginning.
 
 
 
