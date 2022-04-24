@@ -113,10 +113,7 @@ Dump artist;
 You should have noticed even though you put in the command there was no output that is because you will need to use the DUMP command which requires the keyword dump follows by the value that you want to view it is similar to a print function in Python. Now you are able to add data into Pig, add relationships to the data, print the data, and find the Maximum, Minimum, and Average values all in Apache Pig.
 
 ### 8. Summary of what hive and pig are and how they display the average, max, and min. 
-During this guide you should have learned about what Apache Hive and Apache Pig are, how to set up a Docker image to run there environment, and how to be able to find the Maximum, Minimum, and Average ages of the Artists.
-
-
-In this beginers demonstration you should have gained some insight into what Apache Hive and Apache Pig are as well as how to set up there environment to use them and 
+During this beginners guide you should have gained some insight into what Apache Hive and Apache Pig are. While also learning how to set up the Docker image to run there environments. Finally you should have also learned about using the language to be able to find the Maximum, Minimum, and Average ages of the Artists from the data that was given in the beginning.
 
 
 
