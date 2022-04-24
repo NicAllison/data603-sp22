@@ -61,13 +61,31 @@ Apache Pig is similar to Spark and Hive where they sit on top of MapReduce. Pig 
 
 ### 6. How to set up Pig Environment that I used
 
+Setting up the Environment for Apache Pig is a little daunting if you are not using a Mac. With a Mac all you will need to do is a follow the preceding steps below, if not the Docker image that is used does not work on a Windows machine, and there is no information if it will work on a Linux machine. If you happen to be using a Windows or Linux machine this guide does not show the environment set up but you can go to Apache Pig’s website or TutorialPoint they have instructions on how to install what is needed to run Apache Pig. The set up for Apache Pig with a Mac is simple, as long as you followed the Hive instructions on installing Docker than pulling and using the Docker Image it is easy to use. First open up a command terminal and start off by pulling the Docker image. 
 ```
 docker pull hakanserce/apache-pig
+```
+Once the image is pulled the next step is to build the image as a container; this command also add’s a name pig-demo and will put you inside of the container. 
+```
 docker run --name pig-demo -it hakanserce/apache-pig /etc/bootstrap.sh -bash
+```
+Now that you are in the Docker image the next step is to import files that you will need for this example, it is easiest to first create a folder inside of the container and label it data so that when it comes time to adding in the csv file it is will have no issues.
+```
 mkdir /data
+```
+To import the data into the container it is easier to use a separate terminal so you will be able to continue using the container. If you end up closing the container remember that to reopen the container you’ll have to go into the Docker Application and find the pig-demo then start and open in Terminal to reopen the container.
+```
 docker cp artist_age.csv pig-demo:/data/
+```
+Now the container should be open and the csv file is imported the next step is to start up Pig, there are two ways you can choose from either
+```
+pig
+```
+or
+```
 pig -x local
 ```
+the second option is the easiest because you will be able to use the normal csv file and can avoid creating an hdfs which is required for the first option and is not covered in this tutorial. At this point as long as you are using a Mac you should be inside of the container with pig running and the csv file ready to to read.
 
 ### 7. Code used to create each a table and pieces of data, then find the average, maximum, and minimum from the table as well as display all pieces of data as output
 First create a CSV/text file which will contain the names and age of the artists.
