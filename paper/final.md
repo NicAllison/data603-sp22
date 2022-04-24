@@ -88,30 +88,38 @@ pig -x local
 the second option is the easiest because you will be able to use the normal csv file and can avoid creating an hdfs which is required for the first option and is not covered in this tutorial. At this point as long as you are using a Mac you should be inside of the container with pig running and the csv file ready to to read.
 
 ### 7. Code used to create each a table and pieces of data, then find the average, maximum, and minimum from the table as well as display all pieces of data as output
-First create a CSV/text file which will contain the names and age of the artists.
+
+Now that the Apache-Pig Environment is set up and you should have the container and Pig running as well as having the csv file imported you can begin running commands. First you will need to import the csv file which requires the need of the Load command.
 ```
 artist = LOAD ‘artist_age.csv’ USING PigStorage(',') AS (name:chararray, age:isnt);
 ```
-
+The load command has a few parts first it needs the location of the file in quotations, followed by what function is going to be used, then the schema for the data in between each section you will see the keywords Load, Using, and As. The PigStorage is the type of function that is used for this example there are a few others out there such as JsonLoader, TextLoder, and BinStorage. The next step is grouping the data.
 ```
 artist_gp_all = Group artist All;
 ```
-
+The data needs to be grouped because it allows for a relationship with between the data. The Group function has two parts it requires the function that needs a relationship and by what value there is going to be a relationship. For the tutorial GROUP and ALL are the only keywords that are used, but you can replace ALL with BY and you could specify for this example it could be used with age or name. Finally you can find the Maximum, Minimum, and Average.
 ```
 avr_age = foreach artist_gp_all generate AVG(artist.age);
 min_age = foreach artist_gp_all generate MIN(artist.age);
 max_age = foreach artist_gp_all generate MAX(artist.age);
 ```
-
+Getting the Maximum, Average, and Minimum are very similar and only differ by the final keyword. Finding each of these requires the foreach function which requires the value that has a relationship and a function of what you are looking for in the data. You will also need these keywords FOREACH, GENERATE, MAX, MIN, and AVG.
 ```
 Dump min_age;
 Dump max_age;
 Dump avr_age;
 Dump artist;
 ```
+You should have noticed even though you put in the command there was no output that is because you will need to use the DUMP command which requires the keyword dump follows by the value that you want to view it is similar to a print function in Python. Now you are able to add data into Pig, add relationships to the data, print the data, and find the Maximum, Minimum, and Average values all in Apache Pig.
 
 ### 8. Summary of what hive and pig are and how they display the average, max, and min. 
+During this guide you should have learned about what Apache Hive and Apache Pig are, how to set up a Docker image to run there environment, and how to be able to find the Maximum, Minimum, and Average ages of the Artists.
+
+
 In this beginers demonstration you should have gained some insight into what Apache Hive and Apache Pig are as well as how to set up there environment to use them and 
+
+
+
 #### References
 1. Data Used: https://www.superprof.com/blog/top-20-artists/
 2. Hive Docker: https://hub.docker.com/r/bde2020/hive/
