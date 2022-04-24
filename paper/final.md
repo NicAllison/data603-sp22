@@ -1,11 +1,11 @@
 ## Beginning Guide for Hive and Pig
 
 ### 1. Opening Paragraph Explaining what is going to be covered
-<li> This article is going give a brief introduction on Apache Hive and Apache Pig. The document is going to go into detail on how to set up their environments as well as going into the languages that control Pig and Hive. The article will also provide an example on using Hive and Pig which will cover adding data, display the data, as well as finding the average, maximum, and minimum. </li>
+This article is going give a brief introduction on Apache Hive and Apache Pig. The document is going to go into detail on how to set up their environments as well as going into the languages that control Pig and Hive. The article will also provide an example on using Hive and Pig which will cover adding data, display the data, as well as finding the average, maximum, and minimum.
 
 
 ### 2. Paragraph that explains what Hive and HQL is
-<li> Apache Hive is similar to MapReduce where it is tool that sits on top of Hadoop. For Hive it is a data warehouse that, “summarizes Big Data and makes querying and analyzing easy”(TutorialPoint 1). Using Hive to query data in Hadoop you can use the HiveQL, Hive Query Language, which act similar to SQL, but is not a relational database. </li>
+Apache Hive is similar to MapReduce where it is tool that sits on top of Hadoop. For Hive it is a data warehouse that, “summarizes Big Data and makes querying and analyzing easy”(TutorialPoint 1). Using Hive to query data in Hadoop you can use the HiveQL, Hive Query Language, which act similar to SQL, but is not a relational database. 
 
 ### 3. How to set up Hive Environment that I used in Docker
 To set Hive Environment first install we will be using Docker and command line operator to use the install and use Hive. We are going on the assumption that Docker you Docker already installed installed if not you can go to Dockers website and download it, it straight forward on downloading it. First open a command line operator and copy and paste this command:
@@ -70,13 +70,22 @@ pig -x local
 ```
 
 ### 7. Code used to create each a table and pieces of data, then find the average, maximum, and minimum from the table as well as display all pieces of data as output
-###### First create a CSV/text file which will contain the names and age of the artists.
+First create a CSV/text file which will contain the names and age of the artists.
 ```
 artist = LOAD ‘artist_age.csv’ USING PigStorage(',') AS (name:chararray, age:isnt);
+```
+
+```
 artist_gp_all = Group artist All;
+```
+
+```
 avr_age = foreach artist_gp_all generate AVG(artist.age);
 min_age = foreach artist_gp_all generate MIN(artist.age);
 max_age = foreach artist_gp_all generate MAX(artist.age);
+```
+
+```
 Dump min_age;
 Dump max_age;
 Dump avr_age;
@@ -84,7 +93,7 @@ Dump artist;
 ```
 
 ### 8. Summary of what hive and pig are and how they display the average, max, and min. 
-
+In this beginers demonstration you should have gained some insight into what Apache Hive and Apache Pig are as well as how to set up there environment to use them and 
 #### References
 1. Data Used: https://www.superprof.com/blog/top-20-artists/
 2. Hive Docker: https://hub.docker.com/r/bde2020/hive/
