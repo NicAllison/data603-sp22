@@ -44,25 +44,21 @@ You should now have a database being used and a table running inside of it. When
 ```
 INSERT INTO TABLE artist VALUES ('Edgar Degas', 83), ('Leonardo da Vinci', 67);
 ```
-
-
-
-
-
+To add value into the table you can either add them one at a time or you can as shown above add all at once. When adding data to tables you will need to have the keywords INSERT, INTO, TABLE, and VALUES. You will also need to make sure you specify after table which table you intend to add the information to, as well as you will need to put parenthesis around the values you intend to add. Similar to Python you will have to use quotations be it single or double when adding in Strings and will not need quotes for integers and floats. The next step it find the Average, Maximum, and Minimum values from the data.
 ```
 select AVG(age) from artist; 
-```
-Similarly as the average you can also produce the Minimum and Maximum.
-```
 select MAX(age) from artist; 
 select MIN(age) from artist;
 ```
-You can also print out all the information for be it the database and/or the table
+```
+Values for t
+```
+As you can tell all three commands for finding the Maximum, Minimum, and Average are very similar. Except the keywords that are use MAX, MIN, and AVG the other keywords select and from remain the same even the column that is selected as well as the table is the same. Finally you can see results.
 ```
 show tables;
 show databases;
 ```
-
+Lastly you can see all databases and tables that were created with the show command followed by either general or specific tables and databases. Next you will learn about Apache Pig and how it 
 
 &ensp; &ensp; Apache Pig is similar to MapReduce, instead of being a process for Hadoop; Pig works along side with Hadoop so that you can analyze large sets of data. Coding with Pig is easier than using MapReduce because with MapReduce you have to go through the complexity of Java as well as having to deal with the commands for MapReduce. To run commands with Pig you will use a language called PigLatin which has a similar feel to SQL, but you do not define specifically tables and databases. In the example used later you will end up using a CSV file but most Pig commands require that any file is first transformed into a HDFS.
 
