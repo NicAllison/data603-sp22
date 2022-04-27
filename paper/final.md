@@ -58,7 +58,7 @@ As you can tell all three commands for finding the Maximum, Minimum, and Average
 show tables;
 show databases;
 ```
-Lastly you can see all databases and tables that were created with the show command followed by either general or specific tables and databases. Next you will learn about Apache Pig and how it 
+Lastly you can see all databases and tables that were created with the show command followed by either general or specific tables and databases. Next you will learn about Apache Pig, how to set up the environment, as well as running commands with Pig.
 
 &ensp; &ensp; Apache Pig is similar to MapReduce, instead of being a process for Hadoop; Pig works along side with Hadoop so that you can analyze large sets of data. Coding with Pig is easier than using MapReduce because with MapReduce you have to go through the complexity of Java as well as having to deal with the commands for MapReduce. To run commands with Pig you will use a language called PigLatin which has a similar feel to SQL, but you do not define specifically tables and databases. In the example used later you will end up using a CSV file but most Pig commands require that any file is first transformed into a HDFS.
 
