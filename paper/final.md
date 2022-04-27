@@ -42,7 +42,9 @@ create table artist (name string, age int);
 ```
 You should now have a database being used and a table running inside of it. When creating the tables you will need to have the keywords create and table then a name chosen by you for each value that is needed along with its datatype. The next step is to add data into the table.
 ```
-INSERT INTO TABLE artist VALUES ('Edgar Degas', 83), ('Leonardo da Vinci', 67);
+INSERT INTO TABLE artist VALUES ('Vincent van Gogh',37), ('Paul Gauguin',55), ('Claude Monet',86), ('Edouard Manet',51), ('Paul Cezanne',67), ('Auguste Renoir',78), ('Pablo Picasso',91), ('Edgar Degas',83), ('Leonardo da Vinci',67), ('Rembrandt',63), ('Sandro Botticelli',65), ('Peter Paul Rubens',63), ('Michaelangelo',89), ('Francisco Goya',82), ('Gustave Courbet',58), ('Salvador Dali',85)
+
+;
 ```
 To add value into the table you can either add them one at a time or you can as shown above add all at once. When adding data to tables you will need to have the keywords INSERT, INTO, TABLE, and VALUES. You will also need to make sure you specify after table which table you intend to add the information to, as well as you will need to put parenthesis around the values you intend to add. Similar to Python you will have to use quotations be it single or double when adding in Strings and will not need quotes for integers and floats. The next step it find the Average, Maximum, and Minimum values from the data.
 ```
@@ -51,7 +53,23 @@ select MAX(age) from artist;
 select MIN(age) from artist;
 ```
 ```
-Values for t
++-----+
+| _c0 |
++-----+
+| 70.0|
++-----+
+
++-----+
+| _c0 |
++-----+
+| 91  |
++-----+
+
++-----+
+| _c0 |
++-----+
+| 37  |
++-----+
 ```
 As you can tell all three commands for finding the Maximum, Minimum, and Average are very similar. Except the keywords that are use MAX, MIN, and AVG the other keywords select and from remain the same even the column that is selected as well as the table is the same. Finally you can see results.
 ```
