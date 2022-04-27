@@ -4,11 +4,11 @@
 
 &ensp; &ensp; Apache Hive is a data warehouse tool, similar to Apache Spark, which allows you to run commands on Hadoop without having to deal with the complicated commands of MapReduce. Apache Hive is able to do this because it uses MapReduce which is one of the two ways that Hadoop processes data. When you are running commands for Hive you will be using HQL, Hive Query Language, which is similar SQL but it is not a relational database. HQL is not a relational database because it uses a schema for each database and it uses Hadoop Distributed File System (HDFS). HQL does have very similar commands to SQL which you will soon seen in action once you have set up the Hive Environment.
 
-&ensp; &ensp; The Set up for Apache Hive environment requires the installation of Docker. You are able to install it by going to https://docs.docker.com/get-docker/ and you will be given the option to download it based on what Operating System that you are using. Once Docker is installed the first step is to clone the repository. 
+&ensp; &ensp; The Set up for Apache Hive environment requires the installation of Docker. You are able to install it by going to https://docs.docker.com/get-docker/ and you will be given the option to download it based on what Operating System that you are using. Once Docker is installed the first step is to open a command line terminal so you can clone the repository. 
 ```
   git clone https://github.com/big-data-europe/docker-hive.git
 ```
-This command goes to the website and makes a copy of all the data that is inside of it and pulls it down to a folder on your local machine. Once the information is downloaded you can go into it.
+This command goes to the website and makes a copy of all the data that is inside of it and pulls it down to a folder on your local machine. Once the information is downloaded you can access it.
 ```
   cd docker-hive
 ```
@@ -19,7 +19,7 @@ The cd is a common command for Linux, Mac and Windows Operating Systems to go th
 ```
   docker-compose up -d presto-coordinator 
 ```
-The final step in setting up the Docker image fully creates the images. Since this is a large image that uses multiple images for it to properly run that is why there are multiple building steps.
+The final step in setting up the Docker image is creating the container. Since this is a large image that uses multiple images for it to properly run that is why there are multiple building steps in creating the container.
 ```
   docker-compose exec hive-server bash
 ```
