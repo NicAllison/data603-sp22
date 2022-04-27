@@ -109,6 +109,27 @@ Dump max_age;
 Dump avr_age;
 Dump artist;
 ```
+```
+(37)
+(91)
+(70.0)
+(Vincent van Gogh,37)
+(Paul Gauguin,55)
+(Claude Monet,86)
+(Edouard Manet,51)
+(Paul Cezanne,67)
+(Auguste Renoir,78)
+(Pablo Picasso,91)
+(Edgar Degas,83)
+(Leonardo da Vinci,67)
+(Rembrandt,63)
+(Sandro Botticelli,65)
+(Peter Paul Rubens,63)
+(Michaelangelo,89)
+(Francisco Goya,82)
+(Gustave Courbet,58)
+(Salvador Dali,85)
+```
 You should have noticed even though you put in the command there was no output that is because you will need to use the DUMP command which requires the keyword dump follows by the value that you want to view it is similar to a print function in Python. Now you are able to add data into Pig, add relationships to the data, print the data, and find the Maximum, Minimum, and Average values all in Apache Pig.
 
 &ensp; &ensp; During this beginners guide you should have gained some insight into what Apache Hive and Apache Pig are. While also learning how to set up the Docker image to run there environments. Finally you should have also learned about using the language to be able to find the Maximum, Minimum, and Average ages of the Artists from the data that was given in the beginning.
