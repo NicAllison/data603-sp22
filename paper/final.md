@@ -5,7 +5,9 @@
 
 
 ### 2. Paragraph that explains what Hive and HQL is
-&ensp; &ensp; Apache Hive is similar to MapReduce where it is tool that sits on top of Hadoop. For Hive it is a data warehouse that, “summarizes Big Data and makes querying and analyzing easy”(TutorialPoint 1). Using Hive to query data in Hadoop you can use the HiveQL, Hive Query Language, which act similar to SQL, but is not a relational database. 
+&ensp; &ensp; Apache Hive is a data warehouse tool, similar to Apache Spark, where it allows you to run commands on Hadoop without having to deal with the complicated commands of MapReduce. Apache Hive is able to do this because it sits on top of MapReduce which is one of the two ways that Hadoop processes data. When you are running commands for Hive you will be using HQL, Hive Query Language, which is similar SQL but it is not a relational database like SQL. Since HQL is used for a data warehouse tool it uses a schema in a database also since it can use HDFS files as the data, so this means that HQL is not a Relation Database. HQL does have very similar commands to SQL which you will soon seen in action once you have set up the Hive Environment.
+
+Apache Hive is similar to MapReduce where it is tool that sits on top of Hadoop. For Hive it is a data warehouse that, “summarizes Big Data and makes querying and analyzing easy”(TutorialPoint 1). Using Hive to query data in Hadoop you can use the HiveQL, Hive Query Language, which act similar to SQL, but is not a relational database. 
 
 ### 3. How to set up Hive Environment that I used in Docker
 &ensp; &ensp; To set Hive Environment first install we will be using Docker and command line operator to use the install and use Hive. We are going on the assumption that Docker you Docker already installed installed if not you can go to Dockers website and download it, it straight forward on downloading it. First open a command line operator and copy and paste this command:
@@ -35,14 +37,26 @@ once the image is open you can access Hive by:
 Now you are inside and can begin creating HQL commands. </li>
   
 ### 4. How to generate the database, table, average, minimum, maximum, and showing output
-&ensp; &ensp; Now that you should be inside of Hive you can begin writing HQL queries. First you will have to create a database and a table to add information to. For this example we are going to create a art database and an artist table which will include the name and age at which the artist died unless they are still living. 
+&ensp; &ensp; Currently you should have the repository installed, Docker installed, inside of the Docker container, and opened into Hive where you can begin writing code. In this example you will need to write in each name and age of the artist at a time do to there being issues with adding the csv file into this container. The first step is to create a Database.
 ```
 CREATE DATABASE art;
+```
+```
 use art;
+```
+You will need to create a database because Hive will not understand where the table and the data will need to be added. Once you have created the Database you will need to use it otherwise Hive will not understand which database you want to use. The next step is to create the table to add the data in.
+```
 create table artist (name string, age int);
+```
+You should now have a database being used and a table running inside of it. When creating the tables you will need to have the keywords create and table then a name chosen by you for each value that is needed along with its datatype. The next step is to add data into the table.
+```
 INSERT INTO TABLE artist VALUES ('Edgar Degas', 83), ('Leonardo da Vinci', 67);
 ```
-Next you can get the average of the table for this case by doing
+
+
+
+
+
 ```
 select AVG(age) from artist; 
 ```
@@ -57,7 +71,9 @@ show tables;
 show databases;
 ```
 ### 5. Paragraph that explains what Pig and Pig Latin are
-&ensp; &ensp; Apache Pig is similar to Spark and Hive where they sit on top of MapReduce. Pig is a tool that can analyze large sets of data and then able to represent the data as a data flow. When using Apache Pig it as a procedural language, Pig Latin which allows you to make perform MapReduce commands without having to use the clunky ness of Java.
+&ensp; &ensp; Apache Pig is similar to MapReduce, instead of being a process for Hadoop; Pig works along side with Hadoop so that you can analyze large sets of data. Coding with Pig is easier than using MapReduce because with MapReduce you have to go through the complexity of Java as well as having to deal with the commands for MapReduce. To run commands with Pig you will use a language called PigLatin which has a similar feel to SQL, but you do not define specifically tables and databases. In the example used later you will end up using a CSV file but most Pig commands require that any file is first transformed into a HDFS.
+
+Apache Pig is similar to Spark and Hive where they sit on top of MapReduce. Pig is a tool that can analyze large sets of data and then able to represent the data as a data flow. When using Apache Pig it as a procedural language, Pig Latin which allows you to make perform MapReduce commands without having to use the clunky ness of Java.
 
 ### 6. How to set up Pig Environment that I used
 
