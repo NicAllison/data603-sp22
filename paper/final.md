@@ -7,34 +7,31 @@
 ### 2. Paragraph that explains what Hive and HQL is
 &ensp; &ensp; Apache Hive is a data warehouse tool, similar to Apache Spark, where it allows you to run commands on Hadoop without having to deal with the complicated commands of MapReduce. Apache Hive is able to do this because it sits on top of MapReduce which is one of the two ways that Hadoop processes data. When you are running commands for Hive you will be using HQL, Hive Query Language, which is similar SQL but it is not a relational database like SQL. Since HQL is used for a data warehouse tool it uses a schema in a database also since it can use HDFS files as the data, so this means that HQL is not a Relation Database. HQL does have very similar commands to SQL which you will soon seen in action once you have set up the Hive Environment.
 
-Apache Hive is similar to MapReduce where it is tool that sits on top of Hadoop. For Hive it is a data warehouse that, “summarizes Big Data and makes querying and analyzing easy”(TutorialPoint 1). Using Hive to query data in Hadoop you can use the HiveQL, Hive Query Language, which act similar to SQL, but is not a relational database. 
-
 ### 3. How to set up Hive Environment that I used in Docker
-&ensp; &ensp; To set Hive Environment first install we will be using Docker and command line operator to use the install and use Hive. We are going on the assumption that Docker you Docker already installed installed if not you can go to Dockers website and download it, it straight forward on downloading it. First open a command line operator and copy and paste this command:
+&ensp; &ensp; The Set up for Apache Hive environment requires the installation of Docker. You are able to install it by going to https://docs.docker.com/get-docker/ and you will be given the option to download it based on what Operating System that you are using. Once Docker is installed the first step is to clone the repository. 
 ```
   git clone https://github.com/big-data-europe/docker-hive.git
 ```
-this command goes to the github repostity and pulls a copy of all the files inside of it. Once the information is downloaded go into the docker-hive folder by:
+This command goes to the website and makes a copy of all the data that is inside of it and pulls it down to a folder on your local machine. Once the information is downloaded you can go into it.
 ```
   cd docker-hive
 ```
-once in the folder use: 
+The cd is a common command for Linux, Mac and Windows Operating Systems to go through the folders on your computer. After you are in the folder you will run two commands which are used to build the image.
 ```
   docker-compose up -d 
 ```
-follow it up by: 
 ```
   docker-compose up -d presto-coordinator 
 ```
-which both of these commands are used to fully build the docker image that was downloaded. Finally you can access the Docker image from the command line by doing
+The final step in setting up the Docker image fully creates the images. Since this is a large image that uses multiple images for it to properly run that is why there are multiple building steps.
 ```
   docker-compose exec hive-server bash
 ```
-once the image is open you can access Hive by: 
+You should now be inside of the Docker image, and the final step is to open Hive.  
 ```
   /opt/hive/bin/beeline -u jdbc:hive2://localhost:10000
 ```
-Now you are inside and can begin creating HQL commands. </li>
+With this command you have the Docker image fully operational, and are able to create HQL queries, databases, and tables.
   
 ### 4. How to generate the database, table, average, minimum, maximum, and showing output
 &ensp; &ensp; Currently you should have the repository installed, Docker installed, inside of the Docker container, and opened into Hive where you can begin writing code. In this example you will need to write in each name and age of the artist at a time do to there being issues with adding the csv file into this container. The first step is to create a Database.
