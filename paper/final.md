@@ -160,14 +160,5 @@ You should have noticed even though you put in the command there was no output t
 5. Allison, Niclas. Message to Enkeboll, Andrew. *Slack*, 18, Apr. 2022.
 6. Allison, Niclas. Message to Enkeboll, Andrew. *Slack*, 11, Mar. 2022.
 7. Allison, Niclas. Message to Enkeboll, Andrew. *Slack*, 12, Mar. 2022.
-
-1. Data Used: https://www.superprof.com/blog/top-20-artists/
-2. Hive Docker: https://hub.docker.com/r/bde2020/hive/
-3. Hive Docker Instructions: https://github.com/big-data-europe/docker-hive
-4. Hive Help:https://docs.cloudera.com/HDPDocuments/HDP2/HDP-2.6.0/bk_data-access/content/new-feature-insert-values-update-delete.html
-5. https://phoenixnap.com/kb/hive-create-table
-6. https://datafibers-community.github.io/blog/2018/02/02/2018-02-02-hive-get-max-min-value-rows/
-7. https://www.projectpro.io/questions/5760/hive-query-for-avg-of-marks
-8. https://www.tutorialspoint.com/hive/index.htm
-9. https://pig.apache.org/docs/latest/basic.html
-10. https://www.tutorialspoint.com/apache_pig/apache_pig_avg.htm
+8. “Hadoop &amp; Pig.” *Docker Hub*, Hakanserce, 1 Mar. 2016, https://hub.docker.com/r/hakanserce/apache-pig/. 
+9. Ermilov, Ivan, et al. “Big-Data-Europe/Docker-Hive.” *GitHub*, Big-Data-Europe, 6 May 2019, https://github.com/big-data-europe/docker-hive. 
