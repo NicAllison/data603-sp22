@@ -153,12 +153,12 @@ You should have noticed even though you put in the command there was no output t
 
 
 #### References
-1. "Hive - Quick Guide." *Hive - Quick Guide*, TutorialsPoint, 2022, https://www.tutorialspoint.com/hive/hive_quick_guide.htm.
-2. “Apache Pig - Quick Guide.” *Apache Pig - Quick Guide*, TutorialsPoint, 2022, https://www.tutorialspoint.com/apache_pig/apache_pig_quick_guide.htm.
-3. Jess. “The Top 20 Most Famous Artists.” *Superprof*, 29 May 2019, https://www.superprof.com/blog/top-20-artists/. 
-4. Allison, Niclas. Message to Enkeboll, Andrew. *Slack*, 17, Apr. 2022.
-5. Allison, Niclas. Message to Enkeboll, Andrew. *Slack*, 18, Apr. 2022.
-6. Allison, Niclas. Message to Enkeboll, Andrew. *Slack*, 11, Mar. 2022.
-7. Allison, Niclas. Message to Enkeboll, Andrew. *Slack*, 12, Mar. 2022.
-8. “Hadoop &amp; Pig.” *Docker Hub*, Hakanserce, 1 Mar. 2016, https://hub.docker.com/r/hakanserce/apache-pig/. 
-9. Ermilov, Ivan, et al. “Big-Data-Europe/Docker-Hive.” *GitHub*, Big-Data-Europe, 6 May 2019, https://github.com/big-data-europe/docker-hive. 
+1. Allison, Niclas. Message to Enkeboll, Andrew. *Slack*, 17, Apr. 2022.
+2. Allison, Niclas. Message to Enkeboll, Andrew. *Slack*, 18, Apr. 2022.
+3. Allison, Niclas. Message to Enkeboll, Andrew. *Slack*, 11, Mar. 2022.
+4. Allison, Niclas. Message to Enkeboll, Andrew. *Slack*, 12, Mar. 2022.
+5. “Apache Pig - Quick Guide.” *Apache Pig - Quick Guide*, TutorialsPoint, 2022, https://www.tutorialspoint.com/apache_pig/apache_pig_quick_guide.htm.
+6. Ermilov, Ivan, et al. “Big-Data-Europe/Docker-Hive.” *GitHub*, Big-Data-Europe, 6 May 2019, https://github.com/big-data-europe/docker-hive. 
+7. “Hadoop &amp; Pig.” *Docker Hub*, Hakanserce, 1 Mar. 2016, https://hub.docker.com/r/hakanserce/apache-pig/. 
+8. "Hive - Quick Guide." *Hive - Quick Guide*, TutorialsPoint, 2022, https://www.tutorialspoint.com/hive/hive_quick_guide.htm.
+9. Jess. “The Top 20 Most Famous Artists.” *Superprof*, 29 May 2019, https://www.superprof.com/blog/top-20-artists/. 
