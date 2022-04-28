@@ -148,11 +148,19 @@ Dump artist;
 ```
 You should have noticed even though you put in the command there was no output that is because you will need to use the DUMP command which requires the keyword dump followed by the value that you want to view. This is similar to a print function in Python. Now you are able to add data into Pig, add relationships to the data, print the data, and find the Maximum, Minimum, and Average values all in Apache Pig.
 
-&ensp; &ensp; During this beginners guide you should have gained some insight into what Apache Hive and Apache Pig are. While also learning how to set up the Docker image to run their environments. Finally you should have also learned about using the languages to find the Maximum, Minimum, and Average ages of the Artists from the data that was given in the beginning.
+&ensp; &ensp; During this beginners guide you should have gained some insight into what Apache Hive and Apache Pig are. While also learning how to set up the Docker image to run their environments. Finally you should have also learned about using the languages to find the Maximum, Minimum, and Average ages of the Artists from the data.
 
 
 
 #### References
+1. "Hive - Quick Guide." *Hive - Quick Guide*, TutorialsPoint, 2022, https://www.tutorialspoint.com/hive/hive_quick_guide.htm.
+2. “Apache Pig - Quick Guide.” *Apache Pig - Quick Guide*, TutorialsPoint, 2022, https://www.tutorialspoint.com/apache_pig/apache_pig_quick_guide.htm.
+3. Jess. “The Top 20 Most Famous Artists.” *Superprof*, 29 May 2019, https://www.superprof.com/blog/top-20-artists/. 
+4. Allison, Niclas. Message to Enkeboll, Andrew. *Slack*, 17, Apr. 2022.
+5. Allison, Niclas. Message to Enkeboll, Andrew. *Slack*, 18, Apr. 2022.
+6. Allison, Niclas. Message to Enkeboll, Andrew. *Slack*, 11, Mar. 2022.
+7. Allison, Niclas. Message to Enkeboll, Andrew. *Slack*, 12, Mar. 2022.
+
 1. Data Used: https://www.superprof.com/blog/top-20-artists/
 2. Hive Docker: https://hub.docker.com/r/bde2020/hive/
 3. Hive Docker Instructions: https://github.com/big-data-europe/docker-hive
