@@ -1,4 +1,4 @@
-## Beginning Guide for Hive and Pig
+&ensp; &ensp; # Beginning Guide for Hive and Pig
 
 ![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Final/paper/starry_night.jpg)
 
