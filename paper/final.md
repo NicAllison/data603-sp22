@@ -1,5 +1,7 @@
 ## Beginning Guide for Hive and Pig
 
+![Alt text](https://github.com/NicAllison/data603-sp22/blob/Paper_Final/paper/starry_night.jpg)
+
 &ensp; &ensp; This article is going give a brief introduction on Apache Hive and Apache Pig. The document is going to go into detail on how to set up their environments as well as going into the languages that control Pig and Hive. The article will also provide examples on using Hive and Pig which will cover adding data, displaying the data, as well as finding the average, maximum, and minimum.
 
 &ensp; &ensp; Apache Hive is a data warehouse tool, similar to Apache Spark, which allows you to run commands on Hadoop without having to deal with the complicated commands of MapReduce. Apache Hive is able to do this because it uses MapReduce which is one of the two ways that Hadoop processes data. When you are running commands for Hive you will be using HQL, Hive Query Language, which is similar SQL but it is not a relational database. HQL is not a relational database because it uses a schema for each database and it uses Hadoop Distributed File System (HDFS). HQL does have very similar commands to SQL which you will soon seen in action once you have set up the Hive Environment.
