@@ -165,5 +165,3 @@ You should have noticed even though you put in the command there was no output t
 8. "Hive - Quick Guide." *Hive - Quick Guide*, TutorialsPoint, 2022, https://www.tutorialspoint.com/hive/hive_quick_guide.htm.
 9. Jess. “The Top 20 Most Famous Artists.” *Superprof*, 29 May 2019, https://www.superprof.com/blog/top-20-artists/. 
 10. Van Gogh, Vincent. “The Starry Night.” *MoMA*, 23 July 2021, Saint-Rémy, https://www.moma.org/collection/works/79802. Accessed 28 Apr. 2022. 
-
-https://www.moma.org/collection/works/79802
