@@ -1,0 +1,4 @@
+### Spotify with Spark
+Final_Project.ipynb: This is the full project it also provides instructions on how to run it as well as explains each piece and where and how to get the data. You will first need to get the charts.csv file from https://www.kaggle.com/datasets/dhruvildave/spotify-charts and where it shows charts.csv 3.48GB download it from there, once it is downloaded you have to extract it from its zip file then put the csv file in the same folder as Final_Project.ipynb file. The best way to run this is by running each command individually because later on it converts the Spark Dataframes to Pandas Dataframes so that BarGraphs can be printed out as well as saved and it takes a few seconds for each of the pandas commands to run.
+
+presentation.pd: This is the presentation that was given during class, which has all of the information that is given inside of the comments and markdown inside of the Final_Project file
